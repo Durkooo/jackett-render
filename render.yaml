@@ -10,5 +10,6 @@ services:
     envVars:
       - key: TZ
         value: Europe/Bratislava
-    dockerImage: linuxserver/jackett:latest
-    port: 9117
+    dockerCommand: ""
+    dockerContext: .
+    dockerfilePath: Dockerfile
