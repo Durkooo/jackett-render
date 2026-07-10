@@ -9,3 +9,5 @@ services:
     dockerCommand: ""
     dockerContext: .
     dockerfilePath: Dockerfile
+    dockerImage: tsaridas/jackett-stremio:latest
+    port: 9117
