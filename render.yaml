@@ -6,8 +6,9 @@ services:
     envVars:
       - key: TZ
         value: Europe/Bratislava
-    dockerCommand: ""
-    dockerContext: .
-    dockerfilePath: Dockerfile
+      - key: JACKETT_HOST
+        value: http://127.0.0.1:9117
+      - key: JACKETT_API_KEY
+        value: m9lb2z3kdx59h7hift7tcq6u2kot6rp4
     dockerImage: tsaridas/jackett-stremio:latest
-    port: 9117
+    port: 10000
