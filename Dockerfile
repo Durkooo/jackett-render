@@ -1,1 +1,1 @@
-FROM linuxserver/jackett:latest
+FROM tsaridas/jackett-stremio:latest
