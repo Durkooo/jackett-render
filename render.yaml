@@ -7,8 +7,8 @@ services:
       name: jackett-data
       mountPath: /config
       sizeGB: 1
-    dockerCommand: ""
-    dockerImage: linuxserver/jackett:latest
+    docker:
+      dockerImage: linuxserver/jackett:latest
     envVars:
       - key: TZ
         value: Europe/Bratislava
