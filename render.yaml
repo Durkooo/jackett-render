@@ -7,11 +7,8 @@ services:
       name: jackett-data
       mountPath: /config
       sizeGB: 1
-    docker:
-      dockerImage: linuxserver/jackett:latest
     envVars:
       - key: TZ
         value: Europe/Bratislava
-    ports:
-      - port: 9117
-        nodePort: 9117
+    dockerImage: linuxserver/jackett:latest
+    port: 9117
